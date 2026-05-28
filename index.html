@@ -13,6 +13,7 @@
 
 <div class="cursor-dot"></div>
 <div class="cursor-ring"></div>
+
 <nav class="nav" id="nav">
   <div class="nav-left">
     <a href="#hero" class="nav-logo-link">
@@ -25,43 +26,43 @@
 
   <ul class="nav-links" id="nav-links">
     <li><a href="#proyecto">Proyecto</a></li>
-    <li><a href="#avance">Avance</a></li>
     <li><a href="#galeria">Galería</a></li>
     <li><a href="#historia">Historia</a></li>
     <li><a href="#equipo">Equipo</a></li>
-    <li><a href="#herramientas">Tools</a></li>
   </ul>
 
   <button class="nav-burger" id="nav-burger" aria-label="Menú">
     <span></span><span></span><span></span>
   </button>
 </nav>
+
 <section class="hero" id="hero">
   <canvas class="hero-canvas" id="hero-canvas"></canvas>
   <div class="hero-noise"></div>
   <div class="hero-vignette"></div>
   <div class="hero-hline hero-hline--top"></div>
   <div class="hero-hline hero-hline--bot"></div>
-  <img src="img/avatar.png" alt="" class="hero-grid" />
+  <img src="img/avatar.png" alt="Kirby Abaroa" class="hero-grid" />
+  
   <div class="hero-content">
     <div class="hero-eyebrow" data-reveal>
       <span class="hero-eyebrow-dot"></span>
-      Genoveva Rios &nbsp;·&nbsp; 3D Avatar Jam
+      Eduardo Abaroa Héroe Tricolor &nbsp;·&nbsp; 3D Avatar Jam
     </div>
     <h1 class="hero-title" data-reveal data-reveal-delay="1">
       <span class="hero-title-line glitch-text" data-text="CYBER">CYBER</span>
       <span class="hero-title-line glitch-text accent" data-text="MOON">MOON</span>
     </h1>
     <p class="hero-subtitle" data-reveal data-reveal-delay="2">
-      Avatar Jam &nbsp;·&nbsp; Bolivia Ucrónica 3D
+      Bolivia Ucrónica 3D &nbsp;·&nbsp; Edición Especial
     </p>
 
     <div class="hero-actions" data-reveal data-reveal-delay="3">
-      <a href="#avance" class="btn btn--primary">
-        <span class="btn-icon">▶</span>
+      <a href="#proyecto" class="btn btn--primary">
+        <span>Explorar Proyecto</span> <span class="btn-icon">▶</span>
       </a>
       <a href="#galeria" class="btn btn--outline">
-        <span class="btn-arrow">→</span>
+        <span>Ver Galería</span> <span class="btn-arrow">→</span>
       </a>
     </div>
   </div>
@@ -76,190 +77,81 @@
   <div class="hud-corner hud-bl"></div>
   <div class="hud-corner hud-br"></div>
 
-  <div style="position:absolute;top:1.7rem;left:1.7rem;font-size:0.45rem;color:rgba(201,150,58,0.55);z-index:10;letter-spacing:0.2em;pointer-events:none;">✦ ✦</div>
-  <div style="position:absolute;top:1.7rem;right:1.7rem;font-size:0.45rem;color:rgba(201,150,58,0.55);z-index:10;letter-spacing:0.2em;pointer-events:none;">✦ ✦</div>
-  <div style="position:absolute;bottom:1.7rem;left:1.7rem;font-size:0.45rem;color:rgba(201,150,58,0.4);z-index:10;letter-spacing:0.2em;pointer-events:none;">✦ ✦</div>
-  <div style="position:absolute;bottom:1.7rem;right:1.7rem;font-size:0.45rem;color:rgba(201,150,58,0.4);z-index:10;letter-spacing:0.2em;pointer-events:none;">✦ ✦</div>
-
   <div class="hud-status-bar">
     <span class="hud-ping"></span>
-    <span>SYS://CYBERMOON_v2.0</span>
+    <span>SYS://KIRBY_ABAROA_v3.0</span>
     <span class="hud-sep">|</span>
     <span>ESTADO: ACTIVO</span>
     <span class="hud-sep">|</span>
-
-    <span>EVT: 2025</span>
+    <span>EVT: 2026</span>
   </div>
 </section>
 
 <section class="section section--split" id="proyecto">
   <div class="section-inner">
-
     <div class="split-text" data-reveal>
-      <div class="section-label">// 01 — PROYECTO</div>
-
-      <h2 class="section-title">Proyecto<br /><em>Avatar 3D</em></h2>
-
+      <div class="section-label">// 01 — EL CONCEPTO</div>
+      <h2 class="section-title">Héroe de la<br /><em>Eternidad</em></h2>
       <p class="section-body">
-        CYBERMOON es cogio como persona a Genoveva Rios y seguimos pensando en su historia a añadir
-      <p class="section-body">
-       Combinara a dos estilos completamente para resaltar el valor que tiene para la historia boliviana
+        Nuestra propuesta reinterpreta la figura histórica de <strong>Eduardo Abaroa</strong> fundiéndola con la icónica y noble estética de Kirby. Un homenaje ucrónico que mezcla el honor militar y el coraje con un diseño futurista.
       </p>
-
-      <a href="#avance" class="btn btn--primary btn--sm">Ver progreso →</a>
+      <p class="section-body">
+        El personaje viste un uniforme de gala inspirado en la historia boliviana, luciendo cordones dorados, charreteras de honor y medallas con sutiles destellos de la tricolor nacional.
+      </p>
+      <a href="#historia" class="btn btn--primary btn--sm">Leer Lore →</a>
     </div>
 
     <div class="split-image" data-reveal data-reveal-delay="1">
       <div class="avatar-frame">
         <div class="avatar-scanline"></div>
         <img
-          src="img/avatar-placeholder.png"
-          alt="Avatar CYBERMOON"
+          src="img/avatar.png"
+          alt="Avatar Kirby Abaroa"
           class="avatar-img"
-          onerror="this.parentElement.classList.add('avatar-frame--empty')"
         />
-        <div class="avatar-placeholder-ui">
-          <div class="avatar-placeholder-icon">◈</div>
-          <span>AVATAR EN PROCESO</span>
-        </div>
-        <div class="avatar-badge">3D CHARACTER</div>
+        <div class="avatar-badge">3D HERO CHARACTER</div>
       </div>
-    </div>
-
-  </div>
-</section>
-
-<section class="section section--dark" id="avance">
-  <div class="section-inner section-inner--center">
-
-    <div data-reveal>
-      <div class="section-label">// 02 — AVANCE</div>
-      <h2 class="section-title">Estado del<br /><em>Proyecto</em></h2>
-    </div>
-
-    <div class="prog-grid" data-reveal>
-      <div class="prog-card">
-        <div class="prog-card-header">
-          <span class="prog-icon">◉</span>
-
-          <span class="prog-name">Concept Art</span>
-
-          <span class="prog-num">20%</span>
-        </div>
-        <div class="prog-bar-track">
-          <div class="prog-bar-fill" data-target="20"></div>
-        </div>
-        <p class="prog-desc">Bocetos, referencias visuales y diseño del personaje.</p>
-      </div>
-
-      <div class="prog-card">
-        <div class="prog-card-header">
-          <span class="prog-icon">⬡</span>
-          <span class="prog-name">Modelo 3D</span>
-          <span class="prog-num">0%</span>
-        </div>
-        <div class="prog-bar-track">
-          <div class="prog-bar-fill" data-target="0"></div>
-        </div>
-        <p class="prog-desc">Modelado orgánico del avatar.</p>
-      </div>
-
-      <div class="prog-card">
-        <div class="prog-card-header">
-          <span class="prog-icon">≋</span>
-          <span class="prog-name">Texturas</span>
-          <span class="prog-num">0%</span>
-        </div>
-        <div class="prog-bar-track">
-          <div class="prog-bar-fill" data-target="0"></div>
-        </div>
-        <p class="prog-desc">Materiales, UV mapping y pintura de texturas.</p>
-      </div>
-
-      <div class="prog-card">
-        <div class="prog-card-header">
-          <span class="prog-icon">◈</span>
-          <span class="prog-name">Landing Page</span>
-          <span class="prog-num">20%</span>
-        </div>
-        <div class="prog-bar-track">
-          <div class="prog-bar-fill" data-target="0"></div>
-        </div>
-        <p class="prog-desc">Diseño web, animaciones e interfaz de presentación.</p>
-      </div>
-
-      <div class="prog-card">
-        <div class="prog-card-header">
-          <span class="prog-icon">⊛</span>
-          <span class="prog-name">Render Final</span>
-          <span class="prog-num">0%</span>
-        </div>
-        <div class="prog-bar-track">
-          <div class="prog-bar-fill" data-target="0"></div>
-        </div>
-        <p class="prog-desc">Iluminación, composición y renderizado cinematográfico.</p>
-      </div>
-
     </div>
   </div>
 </section>
 
-<section class="section" id="galeria">
+<section class="section section--dark" id="galeria">
   <div class="section-inner">
-
     <div data-reveal>
-      <div class="section-label">// 03 — GALERÍA</div>
-      <h2 class="section-title">Avances<br /><em>Visuales</em></h2>
+      <div class="section-label">// 02 — VISTA RENDER</div>
+      <h2 class="section-title">Detalles del<br /><em>Modelado</em></h2>
     </div>
+    
     <div class="gal-grid" data-reveal>
       <div class="gal-item gal-item--tall">
-        <img src="img/gallery-1.png" alt="Boceto inicial"
-             onerror="this.parentElement.classList.add('gal-empty')" />
+        <img src="img/avatar.png" alt="Render Principal" />
         <div class="gal-overlay">
-          <span class="gal-caption">Boceto inicial</span>
+          <span class="gal-caption">Render Principal Elegante</span>
           <span class="gal-num">01</span>
         </div>
       </div>
 
       <div class="gal-item">
-        <img src="img/gallery-2.png" alt="Vista frontal"
-             onerror="this.parentElement.classList.add('gal-empty')" />
+        <div class="gal-empty"></div>
         <div class="gal-overlay">
-          <span class="gal-caption">Vista frontal</span>
+          <span class="gal-caption">Detalle de Charreteras</span>
           <span class="gal-num">02</span>
         </div>
       </div>
 
       <div class="gal-item">
-        <img src="img/gallery-3.png" alt="Vista posterior"
-             onerror="this.parentElement.classList.add('gal-empty')" />
+        <div class="gal-empty"></div>
         <div class="gal-overlay">
-          <span class="gal-caption">Vista posterior</span>
+          <span class="gal-caption">Emblemas Patrióticos</span>
           <span class="gal-num">03</span>
         </div>
       </div>
+      
       <div class="gal-item gal-item--wide">
-        <img src="img/gallery-4.png" alt="Detalle del rostro"
-             onerror="this.parentElement.classList.add('gal-empty')" />
+        <div class="gal-empty"></div>
         <div class="gal-overlay">
-          <span class="gal-caption">Detalle del rostro</span>
+          <span class="gal-caption">Sable de Honor y Detalles</span>
           <span class="gal-num">04</span>
-        </div>
-      </div>
-      <div class="gal-item">
-        <img src="img/gallery-5.png" alt="Avance en Blender"
-             onerror="this.parentElement.classList.add('gal-empty')" />
-        <div class="gal-overlay">
-          <span class="gal-caption">Avance en Blender</span>
-          <span class="gal-num">05</span>
-        </div>
-      </div>
-      <div class="gal-item">
-        <img src="img/gallery-6.png" alt="Render de prueba"
-             onerror="this.parentElement.classList.add('gal-empty')" />
-        <div class="gal-overlay">
-          <span class="gal-caption">Render de prueba</span>
-          <span class="gal-num">06</span>
         </div>
       </div>
     </div>
@@ -268,141 +160,80 @@
 
 <section class="section section--cinematic" id="historia">
   <div class="cinematic-overlay"></div>
-
   <div class="section-inner section-inner--center">
     <div data-reveal>
-      <div class="section-label">// 04 — HISTORIA</div>
-      <h2 class="section-title section-title--xl">El Universo<br /><em>Ucrónico</em></h2>
+      <div class="section-label">// 03 — HISTORIA</div>
+      <h2 class="section-title section-title--xl">La Promesa del<br /><em>Topáter</em></h2>
     </div>
+    
     <div class="medal-divider" data-reveal>
-      <span>✦ ✦ ✦</span>
+      <span>✦ &nbsp; ◈ &nbsp; ✦</span>
     </div>
 
     <div class="narrative-block" data-reveal>
       <blockquote class="narrative-quote">
-        "En esta sección irá la frase épica del avatar cuando el personaje esté definido."
+        "¿Rendirme yo? ¡Que se rinda su abuela, carajo!"
       </blockquote>
       <div class="narrative-text-cols">
         <div class="narrative-col">
           <p>
-            Esta narravita esta en proceso de construcción porfavor esperar un poco mas
+            En este universo ucrónico, la valentía no conoce límites de formas. Reafirmamos el histórico coraje del héroe del Topáter en una armadura orgánica y esférica capaz de absorber el peso del destino histórico.
           </p>
         </div>
         <div class="narrative-col">
           <p>
-            La estética del personaje fusiona elementos de la cosmovisión andina
-            con un diseño futurista y urbano. La identidad boliviana reinterpretada
-            sin perder su raíz.
-          </p>
-          <p>
-            Cada detalle del modelado, las texturas y la pose del avatar
-            contará una historia. Este espacio se actualizará conforme
-            avance el proceso creativo del equipo.
+            La estética fusiona el rojo del uniforme de gala militar histórico, cordones trenzados de oro brillante y una sutil escarapela en los detalles del cinturón que rinden honor permanente a Bolivia.
           </p>
         </div>
       </div>
-
       <div class="narrative-glyphs">
-        <span>◈</span><span>⬡</span><span>◉</span><span>≋</span><span>⊛</span>
+        <span>◈</span><span>◉</span><span>≋</span>
       </div>
     </div>
   </div>
 </section>
+
 <section class="section section--dark" id="equipo">
   <div class="section-inner">
-
     <div data-reveal>
-      <div class="section-label">// 05 — EQUIPO</div>
+      <div class="section-label">// 04 — EQUIPO</div>
       <h2 class="section-title">El<br /><em>Equipo</em></h2>
     </div>
+    
     <div class="team-logo-block" data-reveal>
       <div class="team-logo-wrap">
-        <img src="img/team-logo.png" alt="CYBERMOON Logo"
-             class="team-logo-img"
-             onerror="this.style.display='none'; document.getElementById('team-logo-fb').style.display='flex';" />
-        <div class="team-logo-fallback" id="team-logo-fb">
-          <span>CYBERMOON</span>
-        </div>
+        <img src="img/team-logo.jpeg" alt="CYBERMOON Logo" class="team-logo-img" />
       </div>
     </div>
+    
     <div class="team-grid" data-reveal>
       <div class="member-card">
         <div class="member-photo">
-          <img src="img/member-1.png" alt="Integrante 1"
-               onerror="this.style.display='none'" />
           <span class="member-initial">W</span>
         </div>
         <div class="member-info">
           <h3 class="member-name">Wilder Apaza Mamani</h3>
-          <span class="member-role">Landing Page</span>
+          <span class="member-role">Landing Page & UI</span>
           <ul class="member-tasks">
             <li>HTML / CSS / JS</li>
-            <li>Animaciones</li>
-            <li>Diseño responsive</li>
+            <li>Efectos Glitch & HUD</li>
+            <li>Diseño Responsive Estilizado</li>
           </ul>
         </div>
       </div>
 
       <div class="member-card">
         <div class="member-photo">
-          <img src="img/member-2.png" alt="Integrante 2"
-               onerror="this.style.display='none'" />
           <span class="member-initial">L</span>
         </div>
         <div class="member-info">
           <h3 class="member-name">Luis Fabio Alvarez Koehnke</h3>
           <span class="member-role">Diseñador 3D</span>
           <ul class="member-tasks">
-            <li>Modelado 3D</li>
-            <li>Rigging</li>
-            <li>Texturas y materiales</li>
+            <li>Modelado 3D Orgánico</li>
+            <li>Texturizado de Gala</li>
+            <li>Composición Cinematográfica</li>
           </ul>
-        </div>
-      </div>
-
-    </div>
-  </div>
-</section>
-
-<section class="section" id="herramientas">
-  <div class="section-inner">
-
-    <div data-reveal>
-      <div class="section-label">// 06 — TECNOLOGÍA</div>
-      <h2 class="section-title">Herramientas<br /><em>del Proyecto</em></h2>
-    </div>
-
-    <div class="tools-list" data-reveal>
-
-      <div class="tool-item">
-        <span class="tool-icon">⬡</span>
-        <div class="tool-info">
-          <strong>Blender</strong>
-          <span>Modelado 3D, rigging y render</span>
-        </div>
-      </div>
-
-      <div class="tool-item">
-        <span class="tool-icon">⌥</span>
-        <div class="tool-info">
-          <strong>GitHub</strong>
-          <span>Control de versiones y colaboración</span>
-        </div>
-      </div>
-
-      <div class="tool-item">
-        <span class="tool-icon">◈</span>
-        <div class="tool-info">
-          <strong>Visual Studio Code</strong>
-          <span>Editor de código para la landing page</span>
-        </div>
-      </div>
-
-      <div class="tool-item">
-        <span class="tool-icon">◉</span>
-        <div class="tool-info">
-          <strong>HTML / CSS / JavaScript</strong>
-          <span>Desarrollo de la interfaz web</span>
         </div>
       </div>
     </div>
@@ -412,11 +243,12 @@
 <footer class="footer">
   <div class="footer-inner">
     <div class="footer-logo">CYBERMOON</div>
-    <p class="footer-event">Genoveva Rios 3D Avatar Jam &nbsp;·&nbsp; 2025</p>
-    <p class="footer-credit">Hecho con código, modelado y cosmovisión andina</p>
+    <p class="footer-event">Kirby Abaroa 3D Avatar Jam &nbsp;·&nbsp; 2026</p>
+    <p class="footer-credit">Hecho con código, modelado y orgullo boliviano</p>
     <div class="footer-glyphs">✦ &nbsp; ◈ &nbsp; ✦ &nbsp; ◉ &nbsp; ✦</div>
   </div>
 </footer>
+
 <script src="script.js"></script>
 </body>
 </html>
