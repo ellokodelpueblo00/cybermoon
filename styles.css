@@ -3,12 +3,11 @@
   --c-bg2:       #110e0a;
   --c-bg3:       #14100c;
 
-  /* Tonos militares y patrióticos */
   --c-gold:      #c9963a;
   --c-gold-lt:   #e8b96a;
   --c-gold-dk:   #7a5520;
 
-  --c-crimson:   #a61c2e; /* Ajustado a rojo vivo militar */
+  --c-crimson:   #a61c2e; 
   --c-crimson-lt:#cb2f43;
 
   --c-slate:     #3d5068;
@@ -40,7 +39,6 @@
   --tex-parchment: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.75' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='300' height='300' filter='url(%23n)' opacity='0.06'/%3E%3C/svg%3E");
 }
 
-/* Base general */
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 html { scroll-behavior: smooth; font-size: 16px; }
 body {
@@ -55,7 +53,6 @@ body {
 a { color: inherit; text-decoration: none; }
 img { display: block; max-width: 100%; }
 
-/* Cursor Personalizado */
 .cursor-dot {
   position: fixed;
   width: 6px; height: 6px;
@@ -81,7 +78,6 @@ body:has(a:hover, button:hover) .cursor-ring {
   border-color: var(--c-gold);
 }
 
-/* Efecto líneas de escaneo HUD */
 body::after {
   content: '';
   position: fixed; inset: 0;
@@ -89,7 +85,6 @@ body::after {
   pointer-events: none; z-index: 9000;
 }
 
-/* Animaciones Reveal */
 [data-reveal] {
   opacity: 0;
   transform: translateY(30px);
@@ -100,7 +95,6 @@ body::after {
 [data-reveal-delay="2"] { transition-delay: 0.2s; }
 [data-reveal-delay="3"] { transition-delay: 0.3s; }
 
-/* Dividores decorativos */
 .medal-divider {
   display: flex; align-items: center; gap: 1rem; margin: 2.5rem 0; opacity: 0.5;
 }
@@ -109,7 +103,6 @@ body::after {
 }
 .medal-divider span { font-size: 0.9rem; color: var(--c-gold); }
 
-/* Navegación */
 .nav {
   position: fixed; top: 0; left: 0; right: 0; z-index: 800;
   display: flex; align-items: center; justify-content: space-between; padding: 1.1rem 3rem;
@@ -133,7 +126,6 @@ body::after {
 .nav-burger.open span:nth-child(2) { opacity: 0; }
 .nav-burger.open span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
 
-/* Botones */
 .btn {
   display: inline-flex; align-items: center; gap: 0.6rem;
   font-family: var(--f-ui); font-size: 0.9rem; font-weight: 700; letter-spacing: 0.1em;
@@ -146,7 +138,6 @@ body::after {
 .btn--outline:hover { border-color: var(--c-gold); color: var(--c-gold); transform: translateY(-2px); }
 .btn--sm { font-size: 0.8rem; padding: 0.6em 1.4em; }
 
-/* Hero */
 .hero {
   position: relative; height: 100svh; min-height: 600px;
   display: flex; align-items: center; justify-content: flex-start; overflow: hidden;
@@ -168,14 +159,12 @@ body::after {
 .hero-title-line { font-family: var(--f-display); font-size: clamp(4.5rem, 14vw, 11rem); color: var(--c-white); letter-spacing: 0.02em; }
 .hero-title-line.accent { color: var(--c-crimson); text-shadow: 0 0 20px rgba(166,28,46,0.4); }
 
-/* Efecto Glitch */
 .glitch-text { position: relative; }
 .glitch-text::before, .glitch-text::after { content: attr(data-text); position: absolute; top: 0; left: 0; width: 100%; height: 100%; opacity: 0; }
 
 .hero-subtitle { font-family: var(--f-ui); font-size: clamp(1rem, 2.5vw, 1.3rem); font-weight: 300; letter-spacing: 0.15em; text-transform: uppercase; color: var(--c-sand); margin-bottom: 2.5rem; }
 .hero-actions { display: flex; gap: 1.2rem; }
 
-/* Marcos HUD */
 .hud-corner { position: absolute; width: 24px; height: 24px; border-style: solid; border-color: rgba(201,150,58,0.3); pointer-events: none; }
 .hud-tl { top: 1.5rem; left: 1.5rem; border-width: 2px 0 0 2px; }
 .hud-tr { top: 1.5rem; right: 1.5rem; border-width: 2px 2px 0 0; }
@@ -185,7 +174,6 @@ body::after {
 .hud-ping { width: 6px; height: 6px; border-radius: 50%; background: var(--c-gold); align-self: center; }
 .hud-sep { opacity: 0.3; }
 
-/* Secciones */
 .section { padding: 7rem 0; position: relative; }
 .section--dark { background: var(--c-bg2); background-image: var(--tex-parchment); }
 .section-inner { max-width: 1200px; margin: 0 auto; padding: 0 5vw; }
@@ -195,7 +183,6 @@ body::after {
 .section-title em { font-style: normal; color: var(--c-gold); }
 .section-body { font-size: 1.05rem; line-height: 1.8; color: var(--c-text); margin-bottom: 1.2rem; }
 
-/* Split */
 .section--split .section-inner { display: grid; grid-template-columns: 1fr 1fr; gap: 5rem; align-items: center; }
 .avatar-frame { position: relative; aspect-ratio: 1 / 1; border: 2px solid var(--c-gold-dk); background: var(--c-surface); box-shadow: 0 15px 40px rgba(0,0,0,0.5); overflow: hidden; border-radius: 12px; }
 .avatar-img { width: 100%; height: 100%; object-fit: cover; }
@@ -203,7 +190,6 @@ body::after {
 @keyframes avScan { from { top: 0; } to { top: 100%; } }
 .avatar-badge { position: absolute; top: 1rem; right: 1rem; font-family: var(--f-mono); font-size: 0.65rem; background: rgba(12,10,8,0.9); color: var(--c-gold); border: 1px solid var(--c-gold-dk); padding: 0.3em 0.8em; border-radius: 4px; }
 
-/* Galería */
 .gal-grid { display: grid; grid-template-columns: repeat(3, 1fr); grid-auto-rows: 240px; gap: 1rem; }
 .gal-item { position: relative; overflow: hidden; border: 1px solid rgba(201,150,58,0.15); border-radius: 8px; background: rgba(0,0,0,0.3); }
 .gal-item--tall { grid-row: span 2; }
@@ -216,14 +202,12 @@ body::after {
 .gal-caption { font-size: 0.85rem; font-weight: 600; color: var(--c-gold-lt); text-transform: uppercase; }
 .gal-num { font-family: var(--f-mono); font-size: 0.7rem; color: var(--c-gold); }
 
-/* Cinemática / Historia */
 .section--cinematic { position: relative; padding: 8rem 0; background: var(--c-bg3); }
 .cinematic-overlay { position: absolute; inset: 0; background: radial-gradient(circle, transparent 30%, var(--c-bg3) 100%); }
 .narrative-quote { font-family: var(--f-display); font-size: clamp(1.8rem, 4vw, 3rem); color: var(--c-white); text-align: center; margin-bottom: 3rem; font-style: italic; position: relative; }
 .narrative-text-cols { display: grid; grid-template-columns: 1fr 1fr; gap: 3rem; text-align: left; }
 .narrative-glyphs { display: flex; gap: 1.5rem; justify-content: center; margin-top: 2rem; color: var(--c-gold-dk); }
 
-/* Equipo */
 .team-logo-block { margin-bottom: 3rem; }
 .team-logo-wrap { width: 120px; height: 120px; border: 2px solid var(--c-gold-dk); border-radius: 50%; overflow: hidden; background: #000; }
 .team-logo-img { width: 100%; height: 100%; object-fit: cover; }
@@ -236,13 +220,11 @@ body::after {
 .member-tasks li { font-size: 0.85rem; color: var(--c-text-dim); }
 .member-tasks li::before { content: '— '; color: var(--c-crimson); }
 
-/* Footer */
 .footer { padding: 4rem 2rem; border-top: 1px solid var(--c-border-dk); text-align: center; background: var(--c-bg2); }
 .footer-logo { font-family: var(--f-display); font-size: 2rem; color: var(--c-gold); letter-spacing: 0.1em; }
 .footer-event { font-family: var(--f-mono); font-size: 0.7rem; color: var(--c-text-dim); }
 .footer-credit { font-size: 0.8rem; color: var(--c-text-dim); opacity: 0.6; }
 
-/* Responsive */
 @media (max-width: 992px) {
   .section--split .section-inner { grid-template-columns: 1fr; gap: 2.5rem; }
   .narrative-text-cols { grid-template-columns: 1fr; gap: 1.5rem; }
